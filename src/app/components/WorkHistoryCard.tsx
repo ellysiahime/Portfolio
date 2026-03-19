@@ -5,25 +5,25 @@ const workHistory = [
   {
     company: "PETRONAS Digital Sdn Bhd",
     position: "Senior Software Engineer",
-    period: "2020 - 2025",
+    period: "2020 - 2025 • Full Time",
     color: "from-purple-500 to-fuchsia-500",
   },
   {
     company: "Wiya Technologies Sdn Bhd",
     position: "Front-End Team Lead",
-    period: "2016 - 2020",
+    period: "2016 - 2020 • Full Time",
     color: "from-violet-500 to-purple-500",
   },
   {
     company: "Upwork.com",
     position: "Freelance Web / UI / Front-End Developer",
-    period: "2009 - 2016",
+    period: "2009 - 2016 • Remote",
     color: "from-fuchsia-500 to-violet-500",
   },
   {
     company: "Barclays / Google / ContineoMedia / Hewlett-Packard",
     position: "Various Roles in Singapore",
-    period: "2011 - 2015",
+    period: "2011 - 2015 • Full Time",
     color: "from-purple-500 to-fuchsia-500",
   },
 ];

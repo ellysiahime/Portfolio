@@ -41,11 +41,13 @@ export function TestimonialCard() {
       
       <div className="relative z-10">
         <div className="flex items-center gap-3 mb-6">
-          <Quote className="w-8 h-8 text-purple-400" />
+          <div className="p-2 rounded-xl bg-purple-500/10 border border-purple-500/20">
+            <Quote className="w-5 h-5 text-purple-400" />
+          </div>
           <h2 className="text-2xl font-bold text-white">Testimonials</h2>
         </div>
 
-        <div className="relative h-56">
+        <div className="relative h-50">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -64,7 +66,7 @@ export function TestimonialCard() {
                 ))}
               </div>
               
-              <p className="text-gray-300 leading-relaxed mb-6 text-sm italic">
+              <p className="text-gray-300 leading-relaxed mb-6 text-md italic">
                 "{testimonial.content}"
               </p>
               

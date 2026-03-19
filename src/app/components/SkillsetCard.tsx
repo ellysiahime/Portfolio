@@ -2,15 +2,32 @@ import React from "react";
 import { Code2, Palette, Smartphone, Zap, Figma, Globe, Database, Blocks } from "lucide-react";
 
 const skills = [
-  { name: "UI/UX Design", icon: Palette },
+  { name: "Next.js", icon: Code2 },
   { name: "React", icon: Code2 },
+  { name: "Angular", icon: Code2 },
+  { name: "Javascript", icon: Code2 },
   { name: "TypeScript", icon: Code2 },
-  { name: "Figma", icon: Figma },
   { name: "Tailwind CSS", icon: Blocks },
+  { name: "WordPress", icon: Globe },
   { name: "Node.js", icon: Globe },
-  { name: "Mobile Design", icon: Smartphone },
-  { name: "Web3", icon: Database },
-  { name: "Prototyping", icon: Zap },
+  { name: "REST API", icon: Smartphone },
+  { name: "Supabase", icon: Database },
+  { name: "PHP & MySQL", icon: Zap },
+  { name: "Figma", icon: Figma },
+  { name: "Notion", icon: Figma },
+  { name: "Git", icon: Zap },
+  { name: "Azure DevOps", icon: Figma },
+  { name: "AWS", icon: Zap },
+  { name: "UI/UX", icon: Palette },
+  { name: "Agile Delivery", icon: Palette },
+  { name: "Software Development", icon: Palette },
+  { name: "Scrum Facilitation", icon: Palette },
+  { name: "Stakeholder Management", icon: Palette },
+  { name: "Metrics & Reporting", icon: Palette },
+  { name: "Team Leadership", icon: Palette },
+  { name: "Distributed Team", icon: Palette },
+  // { name: "Team Leadership", icon: Palette },
+  // { name: "Distributed Team", icon: Palette },
 ];
 
 export function SkillsetCard() {

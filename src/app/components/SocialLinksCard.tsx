@@ -14,7 +14,7 @@ export function SocialLinksCard() {
       {/* Gradient background */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#8964d1] to-black opacity-50 blur-3xl pointer-events-none"></div>
       
-      <div className="relative z-10 w-full">
+      <div className="relative z-10 w-full h-full">
         <h3 className="text-xl font-semibold text-white mb-6 text-center">Let's Connect</h3>
         <div className="grid grid-cols-2 gap-4 justify-items-center max-w-xs mx-auto">
           {socials.map((social, idx) => {
