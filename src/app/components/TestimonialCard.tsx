@@ -1,3 +1,4 @@
+import React from "react";
 import { Star, Quote } from "lucide-react";
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
@@ -34,9 +35,9 @@ export function TestimonialCard() {
   }, []);
 
   return (
-    <div className="relative rounded-3xl bg-black p-8 border border-zinc-800/50 overflow-hidden group hover:border-purple-500/30 transition-all duration-300 h-full">
-      {/* Gradient from left side */}
-      <div className="absolute top-0 right-0 w-64 h-full bg-gradient-to-l from-[#8964d1] to-transparent opacity-70 blur-2xl pointer-events-none"></div>
+    <div className="relative p-8 h-full">
+      {/* Gradient background */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#8964d1] to-black opacity-50 blur-3xl pointer-events-none"></div>
       
       <div className="relative z-10">
         <div className="flex items-center gap-3 mb-6">
@@ -44,7 +45,7 @@ export function TestimonialCard() {
           <h2 className="text-2xl font-bold text-white">Testimonials</h2>
         </div>
 
-        <div className="relative h-64">
+        <div className="relative h-56">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -63,7 +64,7 @@ export function TestimonialCard() {
                 ))}
               </div>
               
-              <p className="text-gray-300 leading-relaxed mb-6 text-lg italic">
+              <p className="text-gray-300 leading-relaxed mb-6 text-sm italic">
                 "{testimonial.content}"
               </p>
               

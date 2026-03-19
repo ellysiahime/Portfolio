@@ -1,3 +1,4 @@
+import React from "react";
 import { Code2, Palette, Smartphone, Zap, Figma, Globe, Database, Blocks } from "lucide-react";
 
 const skills = [
@@ -14,9 +15,9 @@ const skills = [
 
 export function SkillsetCard() {
   return (
-    <div className="relative rounded-3xl bg-black p-8 border border-zinc-800/50 hover:border-purple-500/30 transition-all duration-300 h-full overflow-hidden">
-      {/* Circular gradient background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-[#8964d1] to-[#a47ee6] rounded-full opacity-70 blur-3xl pointer-events-none"></div>
+    <div className="relative p-8 h-full">
+      {/* Gradient background */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#8964d1] to-black opacity-50 blur-3xl pointer-events-none"></div>
       
       <div className="relative z-10">
         <div className="flex items-center gap-3 mb-6">
