@@ -1,0 +1,29 @@
+@import "./fonts.css";
+@import "./tailwind.css";
+@import "./theme.css";
+
+.test-border {
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 2, 23, 0) 22.69%,
+    rgba(22, 9, 42, 0.2) 100%
+  );
+}
+
+.test-bg {
+  position: absolute;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(191, 175, 255, 0.04) 0%,
+      rgba(191, 175, 255, 0.04) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(101, 73, 222, 0.05) 0%,
+      rgba(101, 73, 222, 0.2) 100%
+    );
+  overflow: hidden;
+}
