@@ -23,13 +23,13 @@ export function BioCard() {
           </p>
           <div className="flex gap-3">
             <a
-              href="mailto:ellysiahime@gmail.com"
-              className="inline-flex items-center gap-1 px-4 py-2 rounded-full bg-purple-600 hover:bg-purple-500 text-white hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300"
+              href="mailto:ellysiahime@gmail.com" className="cta-btn"
             >
-              Get in touch
-              <ArrowRight className="w-4 h-4" />
+              <span className="cta-content">
+                Get in touch
+                <ArrowRight className="w-4 h-4" />
+              </span>
             </a>
-            
           </div>
         </div>
       </div>

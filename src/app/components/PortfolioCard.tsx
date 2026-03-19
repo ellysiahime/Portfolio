@@ -52,17 +52,42 @@ const projects = [
 export function PortfolioCard() {
   type Project = (typeof projects)[number];
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(max-width: 767px)");
+
+    const update = () => setIsMobile(mql.matches);
+    update();
+
+    // Support older browsers (not likely, but keeps it safe).
+    if (mql.addEventListener) {
+      mql.addEventListener("change", update);
+      return () => mql.removeEventListener("change", update);
+    }
+
+    mql.addListener(update);
+    return () => mql.removeListener(update);
+  }, []);
+
   const slides = useMemo(() => {
+    const chunkSize = isMobile ? 1 : 2;
     const result: Project[][] = [];
-    for (let i = 0; i < projects.length; i += 2) {
-      result.push(projects.slice(i, i + 2));
+
+    for (let i = 0; i < projects.length; i += chunkSize) {
+      result.push(projects.slice(i, i + chunkSize));
     }
     return result;
-  }, []);
+  }, [isMobile]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [modalProject, setModalProject] = useState<Project | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    // Ensure current slide index stays in range after responsive re-grouping.
+    setCurrentIndex(0);
+  }, [slides.length]);
 
   useEffect(() => {
     if (slides.length <= 1) return;
@@ -92,7 +117,7 @@ export function PortfolioCard() {
         </div>
 
         {/* 2-up carousel */}
-        <div className="relative flex-1 min-h-0">
+        <div className="relative flex-1 min-h-[190px] md:min-h-0">
           {slides.map((slide, slideIndex) => (
             <motion.div
               key={slideIndex}
@@ -105,7 +130,7 @@ export function PortfolioCard() {
               transition={{ duration: 0.45 }}
               className="absolute inset-0"
             >
-              <div className="grid grid-cols-2 gap-4 h-full items-stretch">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-full items-stretch">
                 {slide.map((project) => (
                   <button
                     key={project.title}
@@ -114,9 +139,9 @@ export function PortfolioCard() {
                       setModalProject(project);
                       setIsModalOpen(true);
                     }}
-                    className="group relative rounded-2xl overflow-hidden border border-zinc-800 hover:border-purple-500/50 transition-all duration-300 cursor-pointer flex flex-col h-full text-left"
+                    className="group relative rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer flex flex-col text-left"
                   >
-                    <div className="relative overflow-hidden bg-zinc-950 flex-1 min-h-[120px]">
+                    <div className="relative overflow-hidden bg-zinc-950 md:flex-1 min-h-[120px]">
                       <ImageWithFallback
                         src={project.image}
                         alt={project.title}
@@ -182,7 +207,7 @@ export function PortfolioCard() {
                   <ImageWithFallback
                     src={modalProject.image}
                     alt={modalProject.title}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-44 object-cover"
                   />
                 </div>
 
