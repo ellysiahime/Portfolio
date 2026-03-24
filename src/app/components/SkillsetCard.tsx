@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Palette, Smartphone, Zap, Figma, Globe, Database, Blocks } from "lucide-react";
+import { Code2, Braces, Palette, Zap, Cloud, Users, Globe, Blocks } from "lucide-react";
 
 const skills = [
   { name: "Next.js", icon: Code2 },
@@ -7,27 +7,25 @@ const skills = [
   { name: "Angular", icon: Code2 },
   { name: "Javascript", icon: Code2 },
   { name: "TypeScript", icon: Code2 },
-  { name: "Tailwind CSS", icon: Blocks },
-  { name: "WordPress", icon: Globe },
-  { name: "Node.js", icon: Globe },
-  { name: "REST API", icon: Smartphone },
-  { name: "Supabase", icon: Database },
-  { name: "PHP & MySQL", icon: Zap },
-  { name: "Figma", icon: Figma },
-  { name: "Notion", icon: Figma },
-  { name: "Git", icon: Zap },
-  { name: "Azure DevOps", icon: Figma },
-  { name: "AWS", icon: Zap },
+  { name: "Tailwind CSS", icon: Code2 },
+  { name: "WordPress", icon: Braces },
+  { name: "Node.js", icon: Braces },
+  { name: "REST API", icon: Braces },
+  { name: "Supabase", icon: Braces },
+  { name: "PHP & MySQL", icon: Braces },
+  { name: "Git", icon: Cloud },
+  { name: "Azure DevOps", icon: Cloud },
+  { name: "AWS", icon: Cloud },
+  { name: "Figma", icon: Palette },
+  { name: "Notion", icon: Palette },
   { name: "UI/UX", icon: Palette },
-  { name: "Agile Delivery", icon: Palette },
-  { name: "Software Development", icon: Palette },
-  { name: "Scrum Facilitation", icon: Palette },
-  { name: "Stakeholder Management", icon: Palette },
-  { name: "Metrics & Reporting", icon: Palette },
-  { name: "Team Leadership", icon: Palette },
-  { name: "Distributed Team", icon: Palette },
-  // { name: "Team Leadership", icon: Palette },
-  // { name: "Distributed Team", icon: Palette },
+  { name: "Software Development", icon: Blocks },
+  { name: "Web Application", icon: Blocks },
+  { name: "Agile Delivery", icon: Users },
+  { name: "Scrum Facilitation", icon: Users },
+  { name: "Stakeholder Management", icon: Users },
+  { name: "Metrics & Reporting", icon: Globe },
+  { name: "Ownership & Leadership", icon: Globe },
 ];
 
 export function SkillsetCard() {
