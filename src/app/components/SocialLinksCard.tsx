@@ -1,11 +1,10 @@
 import React from "react";
-import { Github, Linkedin } from "lucide-react";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#", color: "hover:text-white" },
-  { icon: Linkedin, label: "LinkedIn", href: "#", color: "hover:text-blue-400" },
-  { icon: Github, label: "GitHub", href: "#", color: "hover:text-white" },
-  { icon: Linkedin, label: "LinkedIn", href: "#", color: "hover:text-blue-400" },
+  { icon: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/ellyshia-suciawan/"},
+  { icon: "email", label: "Email", href: "mailto:ellysiahime@gmail.com"},
+  { icon: "github", label: "GitHub", href: "https://github.com/ellysiahime"},
+  { icon: "upwork", label: "Upwork", href: "https://www.upwork.com/freelancers/~01e212eec24fdecb95"},
 ];
 
 export function SocialLinksCard() {
@@ -14,19 +13,20 @@ export function SocialLinksCard() {
       {/* Gradient background */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#8964d1] to-black opacity-50 blur-3xl pointer-events-none"></div>
       
-      <div className="relative z-10 w-full h-full">
-        <h3 className="text-xl font-semibold text-white mb-6 text-center">Let's Connect</h3>
-        <div className="grid grid-cols-2 gap-4 justify-items-center max-w-xs mx-auto">
-          {socials.map((social, idx) => {
-            const Icon = social.icon;
+      <div className="relative z-10 w-full h-full flex flex-col items-center justify-center">
+        <h2 className="text-2xl font-bold mb-8 text-white">Let's Connect</h2>
+        <div className="grid grid-cols-2 gap-8 justify-items-center max-w-xs mx-auto">
+          {socials.map((social) => {
             return (
               <a
-                key={`${social.label}-${idx}`}
-                href={social.href}
-                className={`flex flex-col items-center gap-2 p-2  ${social.color} transition-all duration-300 group hover:scale-105`}
+                href={social.href} target="_blank"
+                className={`flex flex-col bg-white rounded-full p-2 items-center gap-2 p-2 hover:text-fuchsia-400 transition-all duration-300 group hover:scale-105`}
               >
-                <Icon className="w-7 h-7" />
-                <span className="text-sm">{social.label}</span>
+                <img
+                  src={`/icons/${social.icon}.png`} alt={social.label}
+                  className="w-8 h-8"
+                />
+                
               </a>
             );
           })}

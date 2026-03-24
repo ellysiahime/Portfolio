@@ -1,5 +1,4 @@
 import React from "react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { ArrowRight } from "lucide-react";
 
 export function BioCard() {
