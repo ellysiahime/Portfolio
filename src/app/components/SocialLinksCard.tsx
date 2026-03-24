@@ -14,7 +14,7 @@ export function SocialLinksCard() {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#8964d1] to-black opacity-50 blur-3xl pointer-events-none"></div>
       
       <div className="relative z-10 w-full h-full flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold mb-8 text-white">Let's Connect</h2>
+        <h2 className="text-2xl font-bold mb-8 text-white text-center">Let's Connect</h2>
         <div className="grid grid-cols-2 gap-8 justify-items-center max-w-xs mx-auto">
           {socials.map((social) => {
             return (

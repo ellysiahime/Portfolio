@@ -101,7 +101,7 @@ export function TestimonialCard() {
           <h2 className="text-2xl font-bold text-white">Testimonials</h2>
         </div>
 
-        <div className="relative h-55">
+        <div className="relative h-70 sm:h-55">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}

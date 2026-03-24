@@ -8,44 +8,51 @@ const projects = [
   {
     title: "GrowTrack",
     category: "Full Stack Development",
-    image: "https://images.unsplash.com/photo-1693159682660-c125e71844d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHdvcmtzcGFjZSUyMGRlc2t8ZW58MXx8fHwxNzczNzg5OTU2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/images/growtrack.JPG",
     color: "from-purple-500 to-violet-500",
+    description: "GrowTrack is a private full-stack academic tracker built to help monitor a child's educational progress — from exam schedules and subject scores to weekly timetables and overall performance trends. Originally developed for private family use, it serves as a centralized academic tracker with rich visual insights and data-driven progress monitoring across multiple terms and school years."
   },
   {
     title: "Portfolio",
     category: "Web Design & Development",
-    image: "https://images.unsplash.com/photo-1620403661092-1750c6d4148a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZGVzaWduJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc3MzgxNjc0N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/images/portfolio_site.JPG",
     color: "from-pink-500 to-purple-500",
+    description: "A modern, responsive portfolio website built with React (Vite), focusing on clean UI, smooth interactions, and real-world usability. Features include project showcase with modal previews, testimonial section, and optimized deployment via GitHub Pages. Designed from Figma and refined into reusable, production-ready components."
   },
-  {
-    title: "Stitchlog",
-    category: "Full Stack Development",
-    image: "https://images.unsplash.com/photo-1717996563514-e3519f9ef9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbnxlbnwxfHx8fDE3NzM4NDI3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    color: "from-blue-500 to-purple-500",
-  },
+  // {
+  //   title: "Stitchlog",
+  //   category: "Full Stack Development",
+  //   image: "https://images.unsplash.com/photo-1717996563514-e3519f9ef9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbnxlbnwxfHx8fDE3NzM4NDI3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  //   color: "from-blue-500 to-purple-500",
+  //   description: ""
+  // },
   {
     title: "Virtus-ip",
     category: "Figma to Wordpress CMS",
-    image: "https://images.unsplash.com/photo-1769069918451-0e8ee342a3cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwcHJvamVjdHxlbnwxfHx8fDE3NzM4OTQ5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/images/virtus.JPG",
     color: "from-violet-500 to-purple-500",
+    description: "Collaborated with a UI/UX designer to convert Figma designs into a responsive WordPress landing page using Elementor Pro. Implemented pixel-accurate layouts, custom sections, and mobile-responsive components while ensuring cross-browser compatibility and performance. Worked closely with the designer to maintain visual consistency and user experience. Built as part of a corporate website initiative at PETRONAS Digital."
   },
   {
     title: "STEAR",
     category: "Web Application Development",
-    image: "https://images.unsplash.com/photo-1717996563514-e3519f9ef9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbnxlbnwxfHx8fDE3NzM4NDI3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/images/stear.JPG",
     color: "from-blue-500 to-purple-500",
+    description: "Developed frontend features for the STEAR logistics optimization platform using React, TypeScript, and modern JavaScript. Built responsive dashboards, map-based interfaces, and analytics views to support demand management, route optimization, and voyage monitoring. Collaborated with product managers and backend engineers to deliver scalable UI components integrated with enterprise APIs for a data-driven logistics solution."
   },
   {
     title: "Senior Software Engineer",
     category: "Web Application Development",
-    image: "https://images.unsplash.com/photo-1620403661092-1750c6d4148a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwZGVzaWduJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc3MzgxNjc0N3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/images/software_engineer.JPG",
     color: "from-pink-500 to-purple-500",
+    description: "A five-year body of work delivering modern, scalable front-end solutions for enterprise applications within PETRONAS Digital. Focused on building high-impact internal platforms, dashboards, and microsites using React and Angular, while collaborating closely with backend, UX, and product teams to turn complex business requirements into clean, intuitive user experiences."
   },
   {
     title: "Scrum Master",
     category: "Agile Leadership",
-    image: "https://images.unsplash.com/photo-1769069918451-0e8ee342a3cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB0ZWNoJTIwcHJvamVjdHxlbnwxfHx8fDE3NzM4OTQ5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    image: "/images/scrum_master.JPG",
     color: "from-violet-500 to-purple-500",
+    description: "Served as Scrum Master supporting multiple cross-functional teams within PETRONAS Digital. Facilitated Agile delivery, improved sprint outcomes, and strengthened team collaboration while leveraging a deep technical background to bridge communication between engineers, product owners, and stakeholders."
   },
 ];
 
@@ -141,11 +148,11 @@ export function PortfolioCard() {
                     }}
                     className="group relative rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer flex flex-col text-left"
                   >
-                    <div className="relative overflow-hidden bg-zinc-950 md:flex-1 min-h-[120px]">
+                    <div className="relative overflow-hidden rounded-lg bg-zinc-950 md:flex-1 min-h-[120px]">
                       <ImageWithFallback
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
                       />
 
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -192,7 +199,6 @@ export function PortfolioCard() {
           ))}
         </div>
 
-        {/* Dummy modal (image + title + category) */}
         <Dialog
           open={isModalOpen}
           onOpenChange={(open) => {
@@ -207,7 +213,7 @@ export function PortfolioCard() {
                   <ImageWithFallback
                     src={modalProject.image}
                     alt={modalProject.title}
-                    className="w-full h-44 object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
 
@@ -218,6 +224,7 @@ export function PortfolioCard() {
                     {modalProject.category}
                   </div>
                   <h3 className="text-2xl font-bold">{modalProject.title}</h3>
+                  <p className="text-gray-400 leading-relaxed text-md mb-6">{modalProject.description}</p>
                 </div>
               </div>
             ) : null}
