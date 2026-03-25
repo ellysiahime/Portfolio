@@ -120,11 +120,11 @@ export function PortfolioCard() {
             </div>
             <h2 className="text-2xl font-bold text-white">Featured Work</h2>
           </div>
-          <span className="text-sm text-gray-500">{projects.length} projects</span>
+          {/* <span className="text-sm text-gray-500">{projects.length} projects</span> */}
         </div>
 
         {/* 2-up carousel */}
-        <div className="relative flex-1 min-h-[190px] md:min-h-0">
+        <div className="relative flex-1 min-h-[260px] md:min-h-0">
           {slides.map((slide, slideIndex) => (
             <motion.div
               key={slideIndex}
@@ -148,7 +148,7 @@ export function PortfolioCard() {
                     }}
                     className="group relative rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer flex flex-col text-left"
                   >
-                    <div className="relative overflow-hidden rounded-lg bg-zinc-950 md:flex-1 min-h-[120px]">
+                    <div className="relative overflow-hidden rounded-lg bg-zinc-950 md:flex-1 min-h-[190px]">
                       <ImageWithFallback
                         src={project.image}
                         alt={project.title}
@@ -224,7 +224,7 @@ export function PortfolioCard() {
                     {modalProject.category}
                   </div>
                   <h3 className="text-2xl font-bold">{modalProject.title}</h3>
-                  <p className="text-gray-400 leading-relaxed text-md mb-6">{modalProject.description}</p>
+                  <p className="text-gray-300 leading-relaxed text-md mb-6">{modalProject.description}</p>
                 </div>
               </div>
             ) : null}

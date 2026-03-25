@@ -64,7 +64,7 @@ export function WorkHistoryCard() {
                 <p className="text-purple-400">
                   {work.company}
                 </p> 
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-300">
                   {work.period}
                 </p>
               </div>

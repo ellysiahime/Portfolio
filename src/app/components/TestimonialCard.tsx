@@ -132,7 +132,7 @@ export function TestimonialCard() {
                 />
                 <div>
                   <p className="font-semibold text-white">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.position}</p>
+                  <p className="text-sm text-gray-300">{testimonial.position}</p>
                 </div>
               </div>
             </motion.div>
