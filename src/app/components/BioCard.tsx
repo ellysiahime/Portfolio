@@ -17,7 +17,7 @@ export function BioCard() {
           </h1>
           <p className="text-xl text-purple-300 mb-6">Senior Software Engineer</p>
           <p className="text-gray-300 leading-relaxed text-md mb-6">
-          Senior Software Engineer with 15+ years of experience delivering scalable web applications and leading technical initiatives across enterprise and remote teams. Brings strong expertise in modern web technologies, system design, and front-end architecture, with a focus on performance, usability, and long-term maintainability. Experienced in guiding teams, aligning stakeholders, and driving high-quality software delivery from concept to production.
+          Senior Software Engineer with 15+ years of experience delivering scalable web applications across enterprise and product-focused environments. Strong expertise in frontend architecture, fullstack development, modern web technologies, and AI-powered application workflows, with a focus on performance, usability, and maintainable user-centric systems. Experienced in leading technical initiatives, integrating applications with APIs and backend services, collaborating across cross-functional teams, and supporting Agile software delivery from concept to production.
           </p>
           <div className="flex gap-3">
             <a

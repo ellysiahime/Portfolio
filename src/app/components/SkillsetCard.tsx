@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Braces, Palette, Zap, Cloud, Users, Globe, Blocks } from "lucide-react";
+import { Code2, Braces, Palette, Zap, Cloud, Users, Globe, Blocks, Brain } from "lucide-react";
 
 const skills = [
   { name: "Next.js", icon: Code2 },
@@ -8,23 +8,25 @@ const skills = [
   { name: "Javascript", icon: Code2 },
   { name: "TypeScript", icon: Code2 },
   { name: "Tailwind CSS", icon: Code2 },
-  { name: "WordPress", icon: Braces },
   { name: "Node.js", icon: Braces },
   { name: "REST API", icon: Braces },
-  { name: "Supabase", icon: Braces },
-  { name: "PHP & MySQL", icon: Braces },
-  { name: "Git", icon: Cloud },
+  { name: "SQL & NoSQL", icon: Braces },
+  { name: "AI Integration", icon: Brain },
+  { name: "Prompt Engineering", icon: Brain },
+  { name: "RAG", icon: Brain },
+  { name: "Semantic Search", icon: Brain },
+  { name: "Git & CI/CD", icon: Cloud },
   { name: "Azure DevOps", icon: Cloud },
-  { name: "AWS", icon: Cloud },
+  { name: "WordPress", icon: Palette },
+  { name: "Framer", icon: Palette },
   { name: "Figma", icon: Palette },
-  { name: "Notion", icon: Palette },
   { name: "UI/UX", icon: Palette },
-  { name: "Software Development", icon: Blocks },
+  { name: "Design Systems", icon: Palette },
+  { name: "FullStack Development", icon: Blocks },
   { name: "Web Application", icon: Blocks },
   { name: "Agile Delivery", icon: Users },
-  { name: "Scrum Facilitation", icon: Users },
   { name: "Stakeholder Management", icon: Users },
-  { name: "Metrics & Reporting", icon: Globe },
+  { name: "Scrum Master", icon: Users },
   { name: "Ownership & Leadership", icon: Globe },
 ];
 

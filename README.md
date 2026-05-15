@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio Website
 
-A modern, responsive portfolio website built to showcase my work, technical skills, and experience as a Front-End / Software Engineer.
+A modern, responsive portfolio website built to showcase my work, technical skills, and experience as a Senior Software Engineer.
 
 ## ✨ Overview
 

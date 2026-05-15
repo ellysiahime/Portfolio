@@ -24,7 +24,7 @@ export function StatsCard() {
 
           <div className="flex flex-col items-center">
             <div className="text-4xl md:text-5xl font-semibold tracking-tight text-white leading-none">
-              44<span className="align-top text-2xl md:text-3xl">+</span>
+              45<span className="align-top text-2xl md:text-3xl">+</span>
             </div>
             <div className="mt-2 text-xs md:text-sm text-white/80">Client projects</div>
           </div>

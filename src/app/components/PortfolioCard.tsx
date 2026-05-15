@@ -7,10 +7,31 @@ import { Dialog, DialogContent } from "./ui/dialog";
 const projects = [
   {
     title: "GrowTrack",
-    category: "Full Stack Development",
-    image: "/images/growtrack.JPG",
+    category: "AI Integration & FullStack Development",
+    image: "/images/growtrack2.JPG",
     color: "from-purple-500 to-violet-500",
-    description: "GrowTrack is a private full-stack academic tracker built to help monitor a child's educational progress — from exam schedules and subject scores to weekly timetables and overall performance trends. Originally developed for private family use, it serves as a centralized academic tracker with rich visual insights and data-driven progress monitoring across multiple terms and school years."
+    description: "GrowTrack is a private AI-enhanced full-stack academic tracker built to help monitor a child's educational progress — from exam schedules and subject scores to weekly timetables, performance trends, and AI-generated learning insights. Originally developed for private family use, it serves as a centralized academic dashboard with rich visual analytics, data-driven progress monitoring, and contextual AI feedback across multiple terms and school years."
+  },
+  {
+    title: "Stitchlog",
+    category: "AI Integration & FullStack Development",
+    image: "/images/stitchlog1.png",
+    color: "from-purple-500 to-violet-500",
+    description: "StitchLog is a personal cross-stitch dashboard built as a small full-stack app. It pulls stitching data from Notion, caches and reshapes it in MongoDB, and presents it through a React dashboard with an optional AI assistant for project discovery and recommendations."
+  },
+  {
+    title: "Viana AI",
+    category: "Framer Development",
+    image: "/images/viana.JPG",
+    color: "from-blue-500 to-purple-500",
+    description: "Created a pixel-perfect Framer website from a Figma design, with close attention to layout, spacing, typography, and overall visual accuracy. Built the site to be fully responsive, cleanly structured, and smooth across devices, ensuring the final result matched the original design while delivering a polished and professional user experience."
+  },
+  {
+    title: "Framer Personal Brand",
+    category: "Framer Development",
+    image: "/images/hardiweb.JPG",
+    color: "from-blue-500 to-purple-500",
+    description: "Designed and developed a modern one-page personal website using Framer, focused on clean UI, smooth navigation, and professional presentation. Implemented responsive layout, structured content sections, and optimized performance for fast loading. Customized components and interactions to highlight skills, experience, and testimonials effectively. Delivered a polished, user-friendly site suitable for personal branding and career growth."
   },
   {
     title: "Portfolio",
@@ -19,25 +40,32 @@ const projects = [
     color: "from-pink-500 to-purple-500",
     description: "A modern, responsive portfolio website built with React (Vite), focusing on clean UI, smooth interactions, and real-world usability. Features include project showcase with modal previews, testimonial section, and optimized deployment via GitHub Pages. Designed from Figma and refined into reusable, production-ready components."
   },
-  // {
-  //   title: "Stitchlog",
-  //   category: "Full Stack Development",
-  //   image: "https://images.unsplash.com/photo-1717996563514-e3519f9ef9f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbnxlbnwxfHx8fDE3NzM4NDI3NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-  //   color: "from-blue-500 to-purple-500",
-  //   description: ""
-  // },
   {
-    title: "Virtus-ip",
-    category: "Figma to Wordpress CMS",
+    title: "Lean Ventures",
+    category: "Wordpress CMS",
+    image: "/images/leanventures.JPG",
+    color: "from-violet-500 to-purple-500",
+    description: "Built a custom WordPress website for an international client, developing a flexible and maintainable foundation tailored to their business needs. Focused on responsive layout, clean code structure, and long-term scalability. The site has continued to evolve post-delivery, reflecting real-world usage and adaptability. Completed successfully on Upwork with positive client feedback."
+  },
+  {
+    title: "Virtus-IP",
+    category: "Wordpress CMS",
     image: "/images/virtus.JPG",
     color: "from-violet-500 to-purple-500",
     description: "Collaborated with a UI/UX designer to convert Figma designs into a responsive WordPress landing page using Elementor Pro. Implemented pixel-accurate layouts, custom sections, and mobile-responsive components while ensuring cross-browser compatibility and performance. Worked closely with the designer to maintain visual consistency and user experience. Built as part of a corporate website initiative at PETRONAS Digital."
   },
   {
+    title: "Advanced Materials",
+    category: "Wordpress CMS",
+    image: "/images/advancedmaterials.JPG",
+    color: "from-violet-500 to-purple-500",
+    description: "Designed and developed a modern one-page corporate website using WordPress and Elementor Pro. Created the layout and structure from scratch, focusing on clear content hierarchy, responsive design, and professional presentation. Implemented reusable components and optimized performance for fast loading. Delivered a clean, user-friendly site aligned with corporate branding and business goals."
+  },
+  {
     title: "STEAR",
     category: "Web Application Development",
     image: "/images/stear.JPG",
-    color: "from-blue-500 to-purple-500",
+    color: "from-pink-500 to-purple-500",
     description: "Developed frontend features for the STEAR logistics optimization platform using React, TypeScript, and modern JavaScript. Built responsive dashboards, map-based interfaces, and analytics views to support demand management, route optimization, and voyage monitoring. Collaborated with product managers and backend engineers to deliver scalable UI components integrated with enterprise APIs for a data-driven logistics solution."
   },
   {
@@ -51,7 +79,7 @@ const projects = [
     title: "Scrum Master",
     category: "Agile Leadership",
     image: "/images/scrum_master.JPG",
-    color: "from-violet-500 to-purple-500",
+    color: "from-blue-500 to-pink-500",
     description: "Served as Scrum Master supporting multiple cross-functional teams within PETRONAS Digital. Facilitated Agile delivery, improved sprint outcomes, and strengthened team collaboration while leveraging a deep technical background to bridge communication between engineers, product owners, and stakeholders."
   },
 ];
